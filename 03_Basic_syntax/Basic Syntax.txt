@@ -1,0 +1,19 @@
+Python Basic Syntax
+Examples are in practice python file 
+
+1) For Display any thing on screen 
+	we use "print" with small Brackets like this print()
+	print("Hello World")
+	It print/display Hello World on your screen
+	If you want to print any text then use "" and write your text inner this 
+	If You want to write any numerical value or with operation then use with out ""
+	
+
+2) Comments
+	Comments are ignored by Python.
+	They are used to explain code.
+	when we want to make any line comment we add # sign before the line 
+	For Example:
+		# This is comment and not run in program
+
+3) 

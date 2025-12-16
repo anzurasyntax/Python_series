@@ -1,0 +1,56 @@
+Python Data Types (Basic Types)
+    Python automatically detects the data type.
+
+    1) int (Integer)
+        Whole numbers (no decimal)
+        Example: 
+            a = 10
+            b = -5
+    2) float
+        Numbers with decimal points
+        Example:
+            price = 99.5
+            pi = 3.14
+    3) str (String)
+        Text data (inside quotes)
+        Example:
+            name = "Python"
+            city = 'Multan'
+    4) bool (Boolean)
+        Only True or False
+        Example:
+            is_student = True
+            is_raining = False
+            (T and F are always captial)
+
+
+Here the method to check the data type of any variable
+    Use type() to know the variable’s data type.
+    Example:
+        print(type(3.5))       # float
+        print(type("Hello"))  # str
+        print(type(True))     # bool
+
+
+Here the method to Convert one data type into another.
+
+    1) Convert to Integer
+        Example:
+            x = int(5.7)
+            print(x)   # 5
+
+    2) Convert to Float
+        Example:
+            y = float(10)
+            print(y)   # 10.0
+
+    3) Convert to String
+        Example:
+            age = 20
+            print("My age is " + str(age))
+    
+    4) Convert String to Number
+        Example:
+            num = int("10")
+            print(num + 5)   # 15
+                             # "10" can be converted, but "ten" cannot.

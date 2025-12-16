@@ -1,0 +1,36 @@
+1) input() — Taking Input from User
+    input() is used to get data from the user during program execution.
+    Example:
+         name = input("Enter your name: ")
+         print(name)
+         When the program is execute the programe get the name from the user then store it in to name variable and show in print.
+
+         input() always returns a string
+         if you want to change the data type of this use type converstion
+
+         age = int(input("Enter age: "))
+         print(age + 5)
+
+2) Output — Showing Data using print()
+    print() is used to display output on the screen.
+
+    Differnet method to get output using print function  
+        1) Simple Output
+            print("Hello Python")
+
+        2) Printing multiple values
+            gender = "Anas"
+            age = 21
+            print(gender, age)
+
+        3) Using commas
+            print("My name is", name, "and my age is", age)
+
+        4) Using +
+            print("My age is " + str(age))
+
+        5) f-strings 
+            name = "Anas"
+            age = 21
+
+            print(f"My name is {name} and my age is {age}")

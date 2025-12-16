@@ -1,0 +1,11 @@
+Here are the method to Open the python file or folder in your Vs code. 
+
+1) go to any location and create one folder with any name. Then go inside it.
+2) in this folder click on address bar and write cmd and press enter.
+3) in cmd write "code" then space and press "." then press enter it open the folder in vs code 
+4) in vs code, you see at the left side top the folder name that you open and some plus icon for create any file or folder create on new file icon and write any name with .py extension like app.py 
+5) then write any code in file app.py like print("Hello World")
+6) for run the code go to top bar click on terminal the drop down open click on new terminal. It open the terminal the write in the terminal python and then your file name as we write our file name app.py so we can write like this: python app.py then press enter it show the output on terminal: Hello World
+
+
+This is the way you open a folder into your vs code and run the code.

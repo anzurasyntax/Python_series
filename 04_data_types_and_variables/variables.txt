@@ -1,0 +1,30 @@
+variable   
+    A variable is a container that stores data in memory.
+    In the python we assign any value in any variable that use again and again in our program
+
+Variable Naming Rules
+    Some rules is defined to give name for any variable 
+    1) Must start with a letter or underscore _
+    2) Can contain letters, numbers, underscore
+    3) Case-sensitive (age ≠ Age)
+    4) Should be meaningful
+    5) not use keyword as your variable name (keyword are special words that Python already understands.)
+        Common Python Keywords:
+            if, else, elif
+            for, while
+            break, continue
+            def, return
+            class
+            try, except
+            True, False
+            None
+
+Some Wrong Variable Names
+    1age = 20      # cannot start with number
+    my-age = 30    # hyphen not allowed
+    class = 10     # keyword not allowed
+
+Some Correct Variable name
+    age = 20
+    user_name = "Hello"
+    totalMarks = 85

@@ -1,0 +1,8 @@
+For Install Vs Code As an IDE
+
+1) Go to this link https://code.visualstudio.com/download and click on windows button 
+2) Then double click on the downloaded file. Then click on Run Then Click on "I accept the agreement" then click on next
+3) Then check all boxes and click on next button then click on install button.
+
+
+It install the vs code on your system.

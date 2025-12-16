@@ -1,0 +1,8 @@
+For Install Python First time in your system
+
+1) Go To This link https://www.python.org/downloads/ and click on "Download Python install manager" button from Website
+2) Double click on Downloaded file then click on "Install python" Button. It install the python in your system 
+3) Now press (window button + r) It open the run dialog box write "cmd" in it and press ok.
+4) The Command Shell Open write this as it is "python --version" it give version like Python 3.13.7 if any error correct it then proceed 
+
+This is the way to install python in your local system.
