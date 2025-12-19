@@ -1,0 +1,36 @@
+Conditional Statements
+    Conditional statements are used to make decisions in a program.
+    They allow the program to execute certain code only if a specific condition is True.
+
+    1) if Statement
+            Checks a condition.
+            If the condition is True, the code inside the if block runs.
+            If it’s False, the code is skipped.
+        Syntax:
+            if condition:
+                # code to execute if condition is True
+
+    2) elif Statement
+        Stands for “else if”.
+        Used to check additional conditions if the previous if or elif was False.
+        Syntax:
+        if condition1:
+            # code if condition1 is True
+        elif condition2:
+            # code if condition2 is True
+
+
+    3) else Statement
+        Runs a block of code if all previous conditions (if and elif) are False.
+        Syntax:
+        if condition1:
+            # code if condition1 is True
+        elif condition2:
+            # code if condition2 is True
+        else:
+            # code if all above conditions are False
+
+!important Notes
+        1) condition is an expression that evaluates to True or False
+        2) Indentation (usually 4 spaces) is mandatory in Python
+        3) You can use if alone without elif or else
