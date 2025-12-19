@@ -1,0 +1,10 @@
+Create a Python program that takes student information,
+calculates total and average marks, and displays a student report using basic Python concepts only.
+
+Use only:
+    print()
+    input()
+    variables
+    data types
+    arithmetic operators
+    type conversion
