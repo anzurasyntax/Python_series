@@ -1,0 +1,22 @@
+Loops
+    Loops are used to repeat a block of code multiple times without writing it again and again.
+    They are very useful when you need to perform repetitive tasks.
+
+    1) for loop
+        Used when you know how many times you want to repeat something or when you want to iterate over a sequence.
+        Syntax:
+            for item in sequence:
+                # code to execute
+
+    2) while Loop
+        Used when you want to repeat something until a condition becomes false.
+        Syntax:
+            while condition:
+                statement(s)
+
+
+Special Statements in Loops
+    break → Stops the loop immediately, even if the condition is still True.
+    continue → Skips the current iteration and moves to the next one.
+    pass → Placeholder; does nothing, but allows the code to run.
+
