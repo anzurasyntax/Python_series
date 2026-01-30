@@ -1,0 +1,64 @@
+Python File Handling for Data
+
+Data is often stored in files. Python can read, write, and handle these files easily.
+
+1) CSV Files
+- CSV = Comma Separated Values, like a spreadsheet.
+- You can write data to CSV or read data from it.
+
+Example - Writing CSV:
+import csv
+with open("data.csv", "w", newline="") as file:
+    writer = csv.writer(file)
+    writer.writerow(["Name", "Age", "City"])
+    writer.writerow(["Ali", 23, "Multan"])
+
+Example - Reading CSV:
+with open("data.csv", "r") as file:
+    reader = csv.reader(file)
+    for row in reader:
+        print(row)
+
+---
+
+2) TXT Files
+- TXT files are simple text files.
+- You can write text to a file and read it back.
+
+Example - Writing TXT:
+with open("notes.txt", "w") as file:
+    file.write("Python is fun!\n")
+    file.write("File handling is easy.\n")
+
+Example - Reading TXT:
+with open("notes.txt", "r") as file:
+    content = file.read()
+    print(content)
+
+---
+
+3) JSON Basics
+- JSON = JavaScript Object Notation, a popular format for structured data.
+- Python can convert dictionaries to JSON and back.
+
+Example - Writing JSON:
+import json
+student = {"name": "Ali", "age": 23, "city": "Multan"}
+with open("student.json", "w") as file:
+    json.dump(student, file)
+
+Example - Reading JSON:
+with open("student.json", "r") as file:
+    data = json.load(file)
+    print(data)
+
+---
+
+4) Working with Large Files
+- Large files can crash your program if read all at once.
+- Read them **line by line** to save memory.
+
+Example:
+with open("notes.txt", "r") as file:
+    for line in file:
+        print("Line:", line.strip())

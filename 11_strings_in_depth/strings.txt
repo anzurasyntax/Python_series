@@ -1,0 +1,60 @@
+Strings in Python - Key Methods
+
+1) strip()
+   - Removes spaces or specified characters from the start and end of a string.
+   - Example:
+        city = "  Multan  "
+        city.strip()   # returns "Multan"
+
+2) lower()
+   - Converts all letters in a string to lowercase.
+   - Example:
+        name = "MULTAN"
+        name.lower()  # returns "multan"
+
+3) upper()
+   - Converts all letters in a string to uppercase.
+   - Example:
+        name.upper()  # returns "MULTAN"
+
+4) replace()
+   - Replaces a substring with another string.
+   - Example:
+        text = "I love Python"
+        text.replace("Python", "Data Analysis")  # returns "I love Data Analysis"
+
+5) split()
+   - Splits a string into a list of substrings based on a separator.
+   - Example:
+        sentence = "apple,banana,cherry"
+        sentence.split(",")  # returns ['apple', 'banana', 'cherry']
+
+6) join()
+   - Joins list elements into a string with a separator.
+   - Example:
+        fruits = ['apple', 'banana', 'cherry']
+        " & ".join(fruits)  # returns "apple & banana & cherry"
+
+7) startswith()
+   - Checks if a string starts with a specified substring.
+   - Example:
+        text = "I love Python"
+        text.startswith("I")  # True
+        text.startswith("You")  # False
+
+8) endswith()
+   - Checks if a string ends with a specified substring.
+   - Example:
+        text.endswith("Python")  # True
+        text.endswith("Java")    # False
+
+9) Regex Basics (intro)
+   - Python's `re` module allows pattern matching in strings.
+   - Common functions:
+       * re.findall(pattern, string) - returns all matches
+       * re.search(pattern, string) - returns first match object or None
+   - Example:
+        import re
+        sample_text = "My phone number is 123-456-7890"
+        re.findall(r'\d+', sample_text)  # ['123', '456', '7890']
+        re.search(r'phone', sample_text)  # Match object if 'phone' exists

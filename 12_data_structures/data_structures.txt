@@ -1,0 +1,73 @@
+Python Data Structures
+
+1) Lists
+- Think of a list as a row of boxes where you can keep things.
+- You can change, add, or remove things from a list.
+- Lists can have duplicate items.
+
+Example:
+fruits = ["apple", "banana", "cherry", "banana", "date"]
+
+Filtering - take only what you want:
+bananas = [fruit for fruit in fruits if fruit == "banana"]
+# Result: ['banana', 'banana']
+
+Slicing - take a part of the list:
+first_three = fruits[0:3]  # ['apple', 'banana', 'cherry']
+
+Add/Remove items:
+fruits.append("elderberry")  # add at the end
+fruits.remove("banana")       # remove first 'banana'
+
+---
+
+2) Tuples
+- A tuple is like a list, but you cannot change it after making it.
+- Good for keeping things that should stay the same.
+
+Example:
+person = ("Ali", 23, "Multan")
+print(person[0])  # "Ali"
+
+❌ Cannot do: person[1] = 24  # Error
+
+---
+
+3) Sets
+- A set is a collection of items, but:
+  1. No duplicates
+  2. No order (items are mixed)
+- Good for removing duplicates or checking if something exists.
+
+Example:
+numbers = [1, 2, 3, 2, 4, 1, 5]
+unique_numbers = set(numbers)
+print(unique_numbers)  # {1, 2, 3, 4, 5}
+
+Add/Remove items:
+unique_numbers.add(6)
+unique_numbers.discard(2)  # remove 2
+
+---
+
+4) Dictionaries
+- A dictionary is like a box with labels (key) and things inside (value).
+- Good for storing data with names.
+
+Example:
+student = {"name": "Ali", "age": 23, "city": "Multan"}
+print(student["name"])  # "Ali"
+
+Add/Update items:
+student["grade"] = "A"  # add new info
+student["age"] = 24      # update info
+
+Loop through dictionary:
+for key, value in student.items():
+    print(key, value)
+
+# Output:
+# name Ali
+# age 24
+# city Multan
+# grade A

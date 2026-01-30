@@ -1,0 +1,32 @@
+Functions
+    Functions are used to group reusable code into a single block.
+    They help reduce repetition and make code clean and organized.
+
+    1) Simple Function
+        A function without parameters.
+        Syntax:
+            def function_name():
+                statement(s)
+
+    2) Function with Parameters
+        Used to pass data into a function.
+        Syntax:
+            def function_name(param1, param2):
+                statement(s)
+
+    3) Return Statement
+        Used to send a value back from a function.
+        Syntax:
+            return value
+
+    4) Default Parameters
+        Used when a value is optional.
+        If no value is provided, the default is used.
+
+    5) Lambda Functions
+        Small anonymous functions written in one line.
+        Mostly used for filtering and quick operations.
+
+        Syntax:
+            lambda arguments : expression
+

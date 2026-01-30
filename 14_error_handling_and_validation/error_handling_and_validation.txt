@@ -1,0 +1,65 @@
+Python Error Handling and Validation
+
+Real-world data often has mistakes. Python helps us handle them safely.
+
+1) try / except
+- Use try to run code that might cause an error.
+- Use except to handle the error instead of crashing the program.
+
+Example:
+try:
+    num = int(input("Enter a number: "))
+    print("You entered:", num)
+except ValueError:
+    print("Error: That is not a valid number!")
+
+---
+
+2) Custom Error Messages
+- You can show your own messages for errors.
+- Example: dividing by zero
+
+def divide(a, b):
+    try:
+        result = a / b
+        print("Result:", result)
+    except ZeroDivisionError:
+        print("Error: Cannot divide by zero!")
+
+---
+
+3) Validating Emails
+- Check if an email is in correct format using regular expressions.
+
+import re
+def validate_email(email):
+    pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+    if re.match(pattern, email):
+        print("Valid email:", email)
+    else:
+        print("Invalid email:", email)
+
+---
+
+4) Validating Numbers
+- Check if a value is a number.
+
+def validate_number(number):
+    if str(number).isdigit():
+        print("Valid number:", number)
+    else:
+        print("Invalid number:", number)
+
+---
+
+5) Validating Dates
+- Check if a date is in correct format (YYYY-MM-DD).
+- Use datetime module.
+
+from datetime import datetime
+def validate_date(date_text):
+    try:
+        datetime.strptime(date_text, "%Y-%m-%d")
+        print("Valid date:", date_text)
+    except ValueError:
+        print("Invalid date (expected YYYY-MM-DD):", date_text)
