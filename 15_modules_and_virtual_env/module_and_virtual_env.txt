@@ -1,0 +1,41 @@
+Python Modules and Virtual Environments
+
+1) import
+- Modules are like ready-made Python tools.
+- Built-in modules come with Python.
+- Example:
+import math
+print(math.sqrt(16))  # 4.0
+print(math.pi)        # 3.14159
+
+- You can also import specific functions:
+from math import ceil, floor
+print(ceil(3.2))  # 4
+print(floor(3.8)) # 3
+
+---
+
+2) pip
+- pip is a tool to install Python libraries from the internet.
+- Example: install 'requests' library
+Terminal command:
+pip install requests
+
+- Using requests library in Python:
+import requests
+response = requests.get("https://api.github.com")
+print(response.status_code)  # 200 means success
+
+---
+
+3) Virtual Environments (venv)
+- A virtual environment is like a separate Python workspace.
+- Helps keep libraries for each project separate.
+- Commands (run in terminal):
+python -m venv myenv          # create a new environment
+source myenv/bin/activate      # activate (Linux/Mac)
+myenv\Scripts\activate         # activate (Windows)
+pip install <package>          # install libraries inside environment
+deactivate                     # exit environment
+
+- Using virtual environments prevents conflicts between projects.
